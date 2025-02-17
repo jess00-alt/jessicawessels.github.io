@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 1_homework</title>
+
+    <style>
+      div {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .currently {
+        font-size: 32px;
+      }
+
+      .emojiclass1 {
+        font-size: 30px;
+      }
+
+      h1 {
+        color: #1a64d6;
+        font-size: 30px;
+        padding: 0px auto;
+        margin: 15px auto 5px;
+      }
+
+      h3 {
+        padding-top: 30px;
+      }
+
+      .tomorrow {
+        width: 400px;
+        height: 150px;
+        position: absolute;
+        top: 150px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+
+      .tomorrow:hover {
+        background-color: #fffbef;
+        transition: all 200ms ease-in-out;
+        border-radius: 15px;
+        justify-content: center;
+      }
+
+      .tomorrow-temperature {
+        display: inline-block;
+        font-family: monospace;
+        font-size: 15px;
+        padding-bottom: 40px;
+      }
+
+      .saturday {
+        width: 400px;
+        height: 150px;
+        position: absolute;
+        top: 300px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+
+      .saturday:hover {
+        background-color: #fffbef;
+        transition: all 200ms ease-in-out;
+        border-radius: 15px;
+        justify-content: center;
+      }
+
+      .saturday-temperature {
+        display: inline-block;
+        font-family: monospace;
+        font-size: 15px;
+        padding-bottom: 30px;
+      }
+
+      .sunday {
+        width: 400px;
+        height: 150px;
+        position: absolute;
+        top: 450px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+
+      .sunday:hover {
+        background-color: #fffbef;
+        transition: all 200ms ease-in-out;
+        border-radius: 15px;
+        justify-content: center;
+      }
+
+      .sunday-temperature {
+        display: inline-block;
+        font-family: monospace;
+        font-size: 15px;
+        padding-bottom: 30px;
+      }
+
+      button {
+        color: white;
+        display: block;
+        margin: 0 auto 20px auto;
+        padding: 15px 20px 15px 20px;
+        background-color: #1a64d6;
+        border-color: #1a64d6;
+        font-size: 18px;
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px rgba (0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        position: absolute;
+        top: 630px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 150px;
+        height: 50px;
+      }
+
+      .change-city:hover {
+        background-color: white;
+        border-color: #1a64d6;
+        color: #1a64d6;
+        cursor: pointer;
+      }
+
+      p {
+        font-family: monospace;
+        text-align: center;
+        position: absolute;
+        top: 680px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span class="emojiclass1"> ⛅ </span><br />
+      <h1>Currently 21° in Tokyo</h1>
+    </div>
+    <div class="currently">13° / <strong> 23°</strong></div>
+    <br />
+    <div class="tomorrow">
+      <h3>🌧️ Tomorrow</h3>
+      <span class="tomorrow-temperature"> 10° / <strong>22°</strong></span>
+    </div>
+    <br />
+    <div class="saturday">
+      <h3>🌥️ Saturday</h3>
+      <span class="saturday-temperature"> 15° / <strong>17°</strong></span>
+    </div>
+    <br />
+    <div class="sunday">
+      <h3>☀️ Sunday</h3>
+      <span class="sunday-temperature"> 25° / <strong>28°</strong></span>
+    </div>
+    <br />
+    <br />
+    <button class="change-city">Change city</button>
+
+    <p>Coded by Jessica Wessels</p>
+  </body>
+</html>
+
+<!-- /solutions to week1-homework
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 1_homework</title>
+  
+    <style>
+
+      h1 {
+      color: #1a64d6;
+      text-align: center;
+      font-family: Helvetica, Airal, sans-serif;
+      font-size: 34px;
+      line-height: 48px;
+      margin: 0
+      }
+
+      h2 {
+      text-align: center
+      font-family: Helvetica, Airal, sans-serif;
+      font-size: 34px;
+      line-height: 48px;
+      margin: 0
+      font-weight: lighter
+      }
+
+      ul {
+      padding: 0';
+      }
+
+      h3 {
+      font-family: Helvetica, Airal, sans-serif;
+      }
+
+      li {
+      list-style: none;
+      text-align: center;
+      padding 10px 0;
+      border-radius: 10px;
+      transition: all 200ms ease-in-out;
+      max-width: 400px
+      margin 0 auto;
+      }
+
+      li:hover {
+      background: #ffbef;
+
+
+      }
+
+      p {
+      font-size: 18px;
+      opcaity: 0.7;
+      text-align: center;
+      font-family: monospace;
+      }
+
+      button {
+      display: block;
+      margin 20px auto;
+      border: 1px solid #1a64d6;
+      background: #1a64d6;
+      color: #fff;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 16px 24px;
+      border-radius: 30px;
+      transition: all 200ms ease;
+      box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+      cursor: pointer;
+      }
+
+      button:hover {
+      bakground: white;
+      color: #1a64d6;
+      border: 1px solid #1a64d6;
+      }
+
+    </style
+  </head>
+  <body>
+    <h1>
+    ⛅ 
+    <br />
+    Currently 21° in Tokyo
+    </h1>
+
+    <h2>
+      13° / <strong> 23° </strong>
+    </h2>
+
+    <ul>
+      <li>
+        <h3>
+         🌧️ Tomorrow
+        </h3>
+        <p>
+          10° / <strong> 22° </strong>
+        </p>
+      </li>
+
+      <li>
+        <h3>
+         🌥️ Saturday
+        </h3>
+        <p>
+          15° / <strong> 17° </strong>
+        </p>
+      </li>
+
+      <li>
+        <h3>
+         ☀️ Sunday
+        </h3>
+        <p>
+          25° / <strong> 28° </strong>
+        </p>
+      </li>
+
+      <button>
+        Change city
+      <button>
+
+      
+
+      
+
+-->
