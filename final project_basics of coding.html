@@ -27,7 +27,7 @@
         text-align: center;
       }
 
-      p {
+      .studio-ghibli {
         text-align: justify;
         line-height: 1cm;
         font-size: 15px;
@@ -65,6 +65,10 @@
         box-shadow: 5px 10px rgba (0, 0, 0, 0.3);
         transition: all 200ms ease-in-out;
       }
+
+      .coded-by {
+        font-family: "monospace";
+      }
     </style>
   </head>
 
@@ -78,7 +82,7 @@
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/956/original/Totoro!_%F0%9F%A4%8D.jpeg?1739784692"
         alt="Totoro"
       />
-      <p>
+      <p class = "studio-ghibli">
         Studio Ghibli, Inc. is a Japanese animation studio based in Koganei,
         Tokyo. It has a strong presence in the animation industry and <br />
         has expanded its portfolio to include various media formats, such as
@@ -119,6 +123,8 @@
 
       <button class="takeQuiz"><strong>Take quiz</strong></button>
     </div>
+
+    <p class = "code-owner">Coded by Jessica Wessels</p>
     <script>
       function quizResult() {
         let name = prompt("What is your name?");
